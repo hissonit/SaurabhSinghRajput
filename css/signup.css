@@ -1,0 +1,27 @@
+﻿body {
+   
+    margin: 0 !important;
+    padding: 0 !important;
+    min-height: 100vh;
+    flex-direction: column;
+    background-size:100% 100%;
+	background-repeat:no-repeat;
+
+   
+   
+}
+#nav-mobile {
+    margin-right:30px;
+    font-family:'Agency FB';
+   
+}
+a:link {
+    text-decoration: none;
+    font-size:x-large
+}
+.nav-wrapper  {
+    background-color:#8D0D64;
+}
+#link1:hover,#link2:hover,#link3:hover,#link4:hover {
+    opacity:0.5
+}

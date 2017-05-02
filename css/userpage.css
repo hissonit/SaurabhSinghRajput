@@ -1,0 +1,122 @@
+﻿body {
+
+
+}
+
+td#left {
+width:17%;
+vertical-align:top;
+height:550px;
+background-color:#CCCCCC;
+max-height:800px;
+
+}
+td#right {
+width:83%;
+vertical-align:top;
+height:550px;
+background-color:white;
+overflow-y:auto;
+max-height:800px;
+
+}
+.userinfo {
+    display:inline;
+}
+
+.navigation {
+  width: 100%;
+  margin:0;
+  
+  padding:0;
+  font-family:times New Roman,Verdana,sans-serif,'Microsoft Sans Serif';
+
+
+}
+
+/* reset our lists to remove bullet points and padding */
+.mainmenu, .submenu {
+  list-style: none;
+  padding: 0;
+  margin:0;
+  width:100%;
+  border-width:2px;
+  border-bottom-color:red;
+
+}
+
+/* make ALL links (main and submenu) have padding and background color */
+.mainmenu a {
+  display: block;
+  border-radius:7px;
+ border:0.5px solid #CCCCCC;
+ border-bottom-color:#8D0D64;
+  background-color: #CCC;
+  text-decoration: none;
+  padding: 10px;
+  color: #000;
+  font-size:x-large;
+}
+
+/* add hover behaviour */
+.mainmenu a:hover {
+    background-color:lightcoral;
+
+}
+
+
+/* when hovering over a .mainmenu item,
+  display the submenu inside it.
+  we're changing the submenu's max-height from 0 to 200px;
+*/
+
+.mainmenu li:hover .submenu {
+  display: block;
+  max-height: 500px;
+
+  
+}
+
+/*
+  we now overwrite the background-color for .submenu links only.
+  CSS reads down the page, so code at the bottom will overwrite the code at the top.
+*/
+
+.submenu a {
+  background-color: #999;
+  display:block;border:0.5px solid #CCCCCC;border-bottom-color:red;
+}
+
+/* hover behaviour for links inside .submenu */
+.submenu a:hover {
+  background-color: #666;
+}
+
+/* this is the initial state of all submenus.
+  we set it to max-height: 0, and hide the overflowed content.
+*/
+.submenu {
+  overflow: hidden;
+  max-height:0;
+  -webkit-transition: all 0.5s ease-out;
+}
+
+td#welcomepagename {
+    text-align:left;
+    font-family:Verdana,sans-serif,'Times New Roman';
+    font-weight:normal;
+    margin-top:0;
+    font-size:x-large;
+    padding-top:0;
+
+}
+
+td#welcomepagedate {
+    text-align:right;
+    font-family:Verdana,sans-serif,'Times New Roman';
+    font-weight:normal;
+    margin-top:0;
+    padding-top:0;
+    font-size:x-large;
+}
+

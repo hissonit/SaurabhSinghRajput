@@ -1,0 +1,179 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="mainforuser.master.cs" Inherits="userprofile_mainforuser" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>TalentDIKHAO Welcomes You!!</title>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Tangerine">
+    <link rel="icon" href="../images/LogoMakr.png" type="image/x-icon">
+    <link type="text/css" rel="stylesheet" href="../css/materialize.min.css"  media="screen,projection"/>
+    <link href="../css/mycss.css" rel="stylesheet"/>
+    <link href="../css/userpage.css" rel="stylesheet"/>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .auto-style1 {
+            width: 27%;
+        }
+    </style>
+    
+
+</head>
+<body background="images/background.jpg" >
+ <form id="form1" runat="server">
+    
+  <!--Navigation for master page-->  
+     
+     <nav>
+         <div class="nav-wrapper">
+             <a href="#" class="brand-logo" style="font-size: x-large; margin-left: 5%; font-family: 'Segoe UI'">
+                 <img src="../images/LogoMakr.png" /></a>
+                  <ul id="nav-mobile" style="" class="right hide-on-med-and-down">
+                 <li><a href="Aboutforuser.aspx">About</a></li>
+                 <li><a href="logout.aspx">Logout</a></li>
+             </ul>
+         </div>
+     </nav>
+
+     <!--Navigation end for master page-->
+
+
+
+
+
+
+ <table style="width: 100%;padding:0;margin:0" >
+         <tr>
+             <td id="left" class="auto-style1">
+                 <div class="navigation" style="margin-top: -15px;">
+                     <ul class="mainmenu">
+                         <li><a href="Home.aspx">Home</a></li>
+                     
+                     
+                     <ul class="mainmenu">
+                         <li><a href="#">Dashboard</a>
+                             <ul class="submenu">
+                                 <li><a href="profile.aspx">Profile</a></li>
+                                 <li><a href="changePassword.aspx">Change Password</a></li>
+
+                             </ul>
+                         </li>
+
+                         <li><a href="#">Programming</a>
+                             <ul class="submenu">
+                                 <li><a href="webdesign.aspx">Web Design</a></li>
+                                 <li><a href="codingc.aspx">Coding in C</a></li>
+                                 <li><a href="codingcplusplus.aspx">Coding in C++</a></li>
+                                 <li><a href="codingjava.aspx">Coding in Java</a></li>
+
+                             </ul>
+                         </li>
+
+                         <li><a href="#">Quiz Competition</a>
+                             <ul class="submenu">
+                                 <li><a href="generalaware.aspx">General awareness </a></li>
+                                 <li><a href="technical.aspx">Technical</a></li>
+                             </ul>
+                         </li>
+
+                         <li><a href="#">Arts</a>
+                             <ul class="submenu">
+                                 <li><a href="painting.aspx">Painting</a></li>
+                                 <li><a href="essay.aspx">Eassy Writing</a></li>
+                                 <li><a href="poem.aspx">Poem Writing</a></li>
+                             </ul>
+                         </li>
+
+                         <li><a href="#">Cultural</a>
+                             <ul class="submenu">
+                                 <li><a href="singing.aspx">Singing</a></li>
+                                 <li><a href="dancing.aspx">Dancing</a></li>
+
+                             </ul>
+                         </li>
+
+
+
+                         <li><a href="#">Gaming</a>
+                             <ul class="submenu">
+                                 <li><a href="puzzle.aspx">Puzzle</a></li>
+                                 <!-- <li><a href="#">Online Gaming</a></li>-->
+
+                             </ul>
+                         </li>
+                     </ul>
+                 </div>
+
+
+             </td>
+
+
+             <td id="right" >
+
+                 <div style="margin-top:0;">
+                     <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server" >
+                     
+                     
+                     </asp:ContentPlaceHolder>
+                 </div>
+             </td>
+
+         </tr>
+
+     </table>
+
+
+     <footer class="page-footer" style="margin-top:3px; background-color: #8D0D64">
+         <div class="container">
+             <div class="row">
+                 <div class="col l6 s12">
+                     <h5 class="white-text">
+                         <img src="../images/LogoMakr.png" /></h5>
+                     <p class="grey-text text-lighten-4"></p>
+                 </div>
+             </div>
+         </div>
+
+         <div class="footer-copyright">
+             <div class="container">
+                 © 2014 All Rights Reserved.All other trademarks and copyrights are the property of their respective holders.
+            <div class="grey-text text-lighten-4 right">
+                <div style="padding: 7px;">
+                    <a href="#" id="link1">
+                        <img src="../icons/facebook.png"></a>
+                    <a href="#" id="link2">
+                        <img src="../icons/googleplus.png"></a>
+                    <a href="#" id="link3">
+                        <img src="../icons/linkedin.png"></a>
+                    <a href="#" id="link4">
+                        <img src="../icons/twitter.png"></a>
+                </div>
+            </div>
+             </div>
+         </div>
+     </footer>
+
+
+
+
+
+
+
+ </form>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="../js/myjquery.js"></script>
+   
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="../js/materialize.min.js"></script>
+
+    <!-- Resource jQuery -->
+   
+</body>
+</html>
